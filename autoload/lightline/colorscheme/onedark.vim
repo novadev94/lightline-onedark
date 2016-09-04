@@ -37,28 +37,28 @@ let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': 
 
 let s:p.normal.left     = [ [ s:black, s:normal_color, s:bold ], [ s:white, s:active_bg ] ]
 let s:p.normal.right    = [ [ s:black, s:normal_color ], [ s:white, s:active_bg ] ]
-let s:p.normal.middle   = [ [ s:normal_color, s:black ] ]
+let s:p.normal.middle   = [ [ s:normal_color, s:cursor_grey ] ]
 
-let s:p.insert.left     = [ [ s:black, s:insert_color, s:bold ], [ s:white, s:special_grey ] ]
-let s:p.insert.right    = [ [ s:black, s:insert_color ], [ s:white, s:special_grey ] ]
-let s:p.insert.middle   = [ [ s:insert_color, s:black ] ]
+let s:p.insert.left     = [ [ s:black, s:insert_color, s:bold ], [ s:white, s:active_bg ] ]
+let s:p.insert.right    = [ [ s:black, s:insert_color ], [ s:white, s:active_bg ] ]
+let s:p.insert.middle   = [ [ s:insert_color, s:cursor_grey ] ]
 
 let s:p.replace.left    = [ [ s:black, s:replace_color, s:bold ], [ s:white, s:active_bg ] ]
 let s:p.replace.right   = [ [ s:black, s:replace_color ], [ s:white, s:active_bg ] ]
-let s:p.replace.middle  = [ [ s:replace_color, s:black ] ]
+let s:p.replace.middle  = [ [ s:replace_color, s:cursor_grey ] ]
 
 let s:p.visual.left     = [ [ s:black, s:visual_color, s:bold ], [ s:white, s:active_bg ] ]
 let s:p.visual.right    = [ [ s:black, s:visual_color ], [ s:white, s:active_bg ] ]
-let s:p.visual.middle   = [ [ s:visual_color, s:black ] ]
+let s:p.visual.middle   = [ [ s:visual_color, s:cursor_grey ] ]
 
 let s:p.inactive.left   = [ [ s:white, s:inactive_bg ], [ s:white, s:inactive_bg ] ]
 let s:p.inactive.right  = [ [ s:white, s:inactive_bg ], [ s:white, s:inactive_bg ] ]
 let s:p.inactive.middle = [ [ s:white, s:inactive_bg ] ]
 
-let s:p.tabline.left    = [ [ s:black, s:inactive_bg ] ]
-let s:p.tabline.right   = [ [ s:black, s:active_bg ] ]
+let s:p.tabline.left    = [ [ s:white, s:active_bg ] ]
+let s:p.tabline.right   = [ [ s:white, s:active_bg ] ]
 let s:p.tabline.middle  = [ [ s:black, s:black ] ]
-let s:p.tabline.tabsel  = [ [ s:black, s:white ] ]
+let s:p.tabline.tabsel  = [ [ s:black, s:blue ] ]
 
 let s:p.normal.error    = [ [ s:black, s:light_red ] ]
 let s:p.normal.warning  = [ [ s:black, s:light_yellow ] ]
