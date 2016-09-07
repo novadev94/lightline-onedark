@@ -55,10 +55,11 @@ let s:p.inactive.left   = [ [ s:white, s:inactive_bg ], [ s:white, s:inactive_bg
 let s:p.inactive.right  = [ [ s:white, s:inactive_bg ], [ s:white, s:inactive_bg ] ]
 let s:p.inactive.middle = [ [ s:white, s:inactive_bg ] ]
 
-let s:p.tabline.left    = [ [ s:white, s:active_bg ] ]
-let s:p.tabline.right   = [ [ s:white, s:active_bg ] ]
+let s:p.tabline.left    = [ [ s:gutter_grey, s:cursor_grey ] ]
+let s:p.tabline.right   = [ [ s:white, s:cursor_grey ] ]
 let s:p.tabline.middle  = [ [ s:black, s:black ] ]
-let s:p.tabline.tabsel  = [ [ s:black, s:blue ] ]
+let s:p.tabline.tabsel  = [ [ s:black, s:blue, s:bold ] ]
+let s:p.tabline.bufsel  = [ [ s:blue, s:visual_grey ] ]
 
 let s:p.normal.error    = [ [ s:black, s:light_red ] ]
 let s:p.normal.warning  = [ [ s:black, s:light_yellow ] ]
