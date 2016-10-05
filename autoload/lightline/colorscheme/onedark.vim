@@ -3,9 +3,10 @@
 " Description: onedark colorscheme for Lightline (itchyny/lightline.vim)
 " Author: novadev94 <novadev94@gmail.com>
 " Source: https://github.com/novadev94/lightline-onedark
-" Last Modified: 04 Sep 2016
+" Last Modified: 06 Oct 2016
 " ===========================================================================
 
+let s:bold = get(g:, 'lightline#onedark#disable_bold_style', 0) ? '' : 'bold'
 
 " Colour codes that are used in the original onedark.vim theme
 let s:light_red     = [ '#e06c75', 204 ]
@@ -25,7 +26,6 @@ let s:cursor_grey   = [ '#2c323c', 236 ]
 let s:visual_grey   = [ '#3e4452', 237 ]
 let s:special_grey  = [ '#3b4048', 238 ]
 
-let s:bold          = 'bold'
 let s:tab_color     = s:blue
 let s:normal_color  = s:blue
 let s:insert_color  = s:green
