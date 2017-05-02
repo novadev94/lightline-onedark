@@ -24,7 +24,9 @@ let s:comment_grey  = [ '#5c6370', 59 ]
 let s:gutter_grey   = [ '#636d83', 238 ]
 let s:cursor_grey   = [ '#2c323c', 236 ]
 let s:visual_grey   = [ '#3e4452', 237 ]
+let s:menu_grey     = s:visual_grey
 let s:special_grey  = [ '#3b4048', 238 ]
+let s:vertsplit     = [ '#181a1f', 59 ]
 
 let s:tab_color     = s:blue
 let s:normal_color  = s:blue
