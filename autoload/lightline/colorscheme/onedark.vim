@@ -3,7 +3,7 @@
 " Description: onedark colorscheme for Lightline (itchyny/lightline.vim)
 " Author: novadev94 <novadev94@gmail.com>
 " Source: https://github.com/novadev94/lightline-onedark
-" Last Modified: 06 Oct 2016
+" Last Modified: 19 Feb 2020
 " ===========================================================================
 
 let s:bold = get(g:, 'lightline#onedark#disable_bold_style', 0) ? '' : 'bold'
@@ -63,7 +63,7 @@ let s:p.tabline.right   = [ [ s:tab_color, s:cursor_grey ] ]
 let s:p.tabline.middle  = [ [ s:black, s:black ] ]
 let s:p.tabline.tabsel  = [ [ s:black, s:blue, s:bold ] ]
 let s:p.tabline.bufsel  = [ [ s:tab_color, s:visual_grey ] ]
-let s:p.tabline.tabsep  = [ [ s:white, s:cursor_grey ] ]
+let s:p.tabline.tabsep  = [ [ s:white, s:cursor_grey, s:bold ] ]
 
 let s:p.normal.error    = [ [ s:black, s:light_red ] ]
 let s:p.normal.warning  = [ [ s:black, s:light_yellow ] ]
