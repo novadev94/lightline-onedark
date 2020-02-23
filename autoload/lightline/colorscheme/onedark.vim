@@ -9,24 +9,26 @@
 let s:bold = get(g:, 'lightline#onedark#disable_bold_style', 0) ? '' : 'bold'
 
 " Colour codes that are used in the original onedark.vim theme
-let s:light_red     = [ '#e06c75', 204 ]
-let s:dark_red      = [ '#be5046', 196 ]
-let s:green         = [ '#98c379', 114 ]
-let s:blue          = [ '#61afef', 39 ]
-let s:cyan          = [ '#56b6c2', 38 ]
-let s:magenta       = [ '#c678dd', 170 ]
-let s:light_yellow  = [ '#e5c07b', 180 ]
-let s:dark_yellow   = [ '#d19a66', 173 ]
+" https://github.com/joshdick/onedark.vim/blob/master/autoload/onedark.vim
 
-let s:black         = [ '#282c34', 235 ]
-let s:white         = [ '#abb2bf', 145 ]
-let s:comment_grey  = [ '#5c6370', 59 ]
-let s:gutter_grey   = [ '#636d83', 238 ]
-let s:cursor_grey   = [ '#2c323c', 236 ]
-let s:visual_grey   = [ '#3e4452', 237 ]
-let s:menu_grey     = s:visual_grey
-let s:special_grey  = [ '#3b4048', 238 ]
-let s:vertsplit     = [ '#181a1f', 59 ]
+let s:light_red     = [ '#E06C75', 204, 1 ]
+let s:dark_red      = [ '#BE5046', 196, 9 ]
+let s:green         = [ '#98C379', 114, 2 ]
+let s:blue          = [ '#61AFEF', 39, 4 ]
+let s:cyan          = [ '#56B6C2', 38, 6 ]
+let s:purple        = [ '#C678DD', 170, 5 ]
+let s:light_yellow  = [ '#E5C07B', 180, 3 ]
+let s:dark_yellow   = [ '#D19A66', 173, 11 ]
+
+let s:black         = [ '#282C34', 235, 0 ]
+let s:white         = [ '#ABB2BF', 145, 7 ]
+let s:comment_grey  = [ '#5C6370', 59, 15 ]
+let s:gutter_grey   = [ '#4B5263', 238, 15 ]
+let s:cursor_grey   = [ '#2C323C', 236, 8 ]
+let s:visual_grey   = [ '#3E4452', 237, 15 ]
+let s:menu_grey     = [ '#3E4452', 237, 8 ]
+let s:special_grey  = [ '#3B4048', 238, 15 ]
+let s:vertsplit     = [ '#181A1F', 59, 15 ]
 
 let s:tab_color     = s:blue
 let s:normal_color  = s:blue
@@ -67,5 +69,6 @@ let s:p.tabline.tabsep  = [ [ s:white, s:cursor_grey, s:bold ] ]
 
 let s:p.normal.error    = [ [ s:black, s:light_red ] ]
 let s:p.normal.warning  = [ [ s:black, s:light_yellow ] ]
+let s:p.normal.info     = [ [ s:black, s:purple ] ]
 
 let g:lightline#colorscheme#onedark#palette = lightline#colorscheme#flatten(s:p)
