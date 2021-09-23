@@ -69,6 +69,7 @@ let s:p.tabline.tabsep  = [ [ s:white, s:cursor_grey, s:bold ] ]
 
 let s:p.normal.error    = [ [ s:black, s:light_red ] ]
 let s:p.normal.warning  = [ [ s:black, s:light_yellow ] ]
-let s:p.normal.info     = [ [ s:black, s:purple ] ]
+let s:p.normal.info     = [ [ s:black, s:cyan ] ]
+let s:p.normal.running  = [ [ s:black, s:purple ] ]
 
 let g:lightline#colorscheme#onedark#palette = lightline#colorscheme#flatten(s:p)
